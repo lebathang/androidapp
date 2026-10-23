@@ -1,7 +1,4 @@
 # My android app
-## Video demo
-
-https://github.com/user-attachments/assets/b6bd170f-f9bd-4b1c-bfd4-db13fc8d39e7
 
 ## Hướng dẫn
 Admin mail: admin@mail.com
@@ -21,6 +18,10 @@ pass: 123456
 [link json file](https://github.com/lebathang/androidapp/blob/master/firexport_basic_1792737967225.json)
 
 [Thư viện hình ảnh ImgBB](https://ibb.co/album/FbwSfh)
+
+## Video demo
+
+https://github.com/user-attachments/assets/b6bd170f-f9bd-4b1c-bfd4-db13fc8d39e7
 
 ## Hình ảnh demo
 ### Admin screen
