@@ -39,10 +39,16 @@ class LoginActivity : AppCompatActivity() {
 
             auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
-                    Toast.makeText(this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show()
-                    // Chuyển sang màn hình chính quản lý sản phẩm
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
+                    // MẸO PHÂN QUYỀN: Chỉ cho phép tài khoản có chữ "admin" hoặc đuôi @admin.com vào hệ thống
+                    if (email.contains("admin")) {
+                        Toast.makeText(this, "Đăng nhập Admin thành công!", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
+                    } else {
+                        // Nếu là user thường, đăng xuất luôn và báo lỗi phân quyền
+                        auth.signOut()
+                        Toast.makeText(this, "Tài khoản của bạn không có quyền Admin!", Toast.LENGTH_SHORT).show()
+                    }
                 }
                 .addOnFailureListener { e ->
                     Toast.makeText(this, "Sai tài khoản hoặc mật khẩu: ${e.message}", Toast.LENGTH_SHORT).show()
