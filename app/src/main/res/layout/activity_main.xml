@@ -59,7 +59,6 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- KHU VỰC QUAN TRỌNG: XẾP HÀNG NGANG NÚT CHỌN ẢNH VÀ NÚT X HUỶ CHỌN -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,25 +66,26 @@
         android:gravity="center_vertical"
         android:layout_marginBottom="16dp">
 
-        <Button
-            android:id="@+id/btnSelectImage"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/edtProductImageUrl"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Chọn hình ảnh sản phẩm"
-            android:backgroundTint="#6F6F6F"
-            android:textColor="#FFFFFF" />
+            android:layout_weight="1"
+            android:hint="Dán link ảnh sản phẩm tại đây (URL)"
+            android:padding="12dp"
+            android:textSize="16sp"/>
 
         <ImageButton
             android:id="@+id/btnCancelImage"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@android:drawable/ic_menu_close_clear_cancel"
             android:visibility="gone" />
     </LinearLayout>
 
-    <!-- NÚT THÊM SẢN PHẨM -->
+
     <Button
         android:id="@+id/btnAddProduct"
         android:layout_width="match_parent"
@@ -100,7 +100,6 @@
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
 
-    <!-- DANH SÁCH HIỂN THỊ RECYCLERVIEW -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvProducts"
         android:layout_width="match_parent"

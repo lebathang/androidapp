@@ -18,7 +18,6 @@
         android:padding="8dp"
         android:gravity="center_vertical">
 
-        <!-- Ảnh sản phẩm bên trái -->
         <ImageView
             android:id="@+id/imgProduct"
             android:layout_width="70dp"
@@ -27,7 +26,6 @@
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_marginEnd="12dp"/>
 
-        <!-- Thông tin chữ ở giữa (Tên, Giá, Loại) -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -59,14 +57,12 @@
                 android:textSize="13sp"/>
         </LinearLayout>
 
-        <!-- Các nút chức năng Sửa/Xóa ở bên phải -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
 
-            <!-- Nút Sửa (Hình cây bút) -->
             <ImageButton
                 android:id="@+id/btnEdit"
                 android:layout_width="36dp"
@@ -75,7 +71,6 @@
                 android:background="?attr/selectableItemBackground"
                 android:contentDescription="Sửa"/>
 
-            <!-- Nút Xóa (Hình thùng rác) -->
             <ImageButton
                 android:id="@+id/btnDelete"
                 android:layout_width="36dp"
