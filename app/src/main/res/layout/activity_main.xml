@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- KHU VỰC THANH TIÊU ĐỀ VÀ NÚT ĐĂNG XUẤT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Tiêu đề căn lề trái và tự động giãn cách -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dữ liệu sản phẩm"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Nút đăng xuất cố định bên phải màn hình -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="ĐĂNG XUẤT"
+            android:textSize="11sp"
+            android:paddingHorizontal="12dp" />
+    </LinearLayout>
+
+    <!-- CÁC Ô NHẬP THÔNG TIN SẢN PHẨM -->
+    <EditText
+        android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtProductType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loại sản phẩm"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- KHU VỰC QUAN TRỌNG: XẾP HÀNG NGANG NÚT CHỌN ẢNH VÀ NÚT X HUỶ CHỌN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn hình ảnh sản phẩm"
+            android:backgroundTint="#6F6F6F"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnCancelImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- NÚT THÊM SẢN PHẨM -->
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SẢN PHẨM"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sản phẩm:"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- DANH SÁCH HIỂN THỊ RECYCLERVIEW -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
