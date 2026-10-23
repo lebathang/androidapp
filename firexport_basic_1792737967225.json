@@ -1,0 +1,34 @@
+[
+  {
+    "Document ID": "J1OQyI0o4Uer2svondlu",
+    "id": "J1OQyI0o4Uer2svondlu",
+    "imageUrl": "",
+    "name": "Leather Jacket Men",
+    "price": 5000000,
+    "type": "Clothing"
+  },
+  {
+    "Document ID": "Ygkkp9c5aZYg9kcrwjUc",
+    "id": "Ygkkp9c5aZYg9kcrwjUc",
+    "imageUrl": "",
+    "name": "Stainless Steel Thermos Flask",
+    "price": 70000,
+    "type": "home_appliances"
+  },
+  {
+    "Document ID": "d3EP0BhTrKAITEXjspiw",
+    "id": "d3EP0BhTrKAITEXjspiw",
+    "imageUrl": "",
+    "name": "Black Cotton T-Shirt Men",
+    "price": 2500000,
+    "type": "Clothing"
+  },
+  {
+    "Document ID": "pg9tHtQqZPMoBMXDCAXC",
+    "id": "pg9tHtQqZPMoBMXDCAXC",
+    "imageUrl": "",
+    "name": "• Smartphone 128GB Black",
+    "price": 25000000,
+    "type": "electronics"
+  }
+]
