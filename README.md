@@ -21,7 +21,11 @@ pass: 123456
 
 ## Video demo
 
-https://github.com/user-attachments/assets/b6bd170f-f9bd-4b1c-bfd4-db13fc8d39e7
+
+
+https://github.com/user-attachments/assets/2be5c470-f61c-4ffd-812e-c31c744f6a6e
+
+
 
 ## Hình ảnh demo
 ### Admin screen
